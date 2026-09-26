@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Live Query Filter System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Live Query Filter System</h1>
+        <p>Search and filter products instantly</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Search -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+        </div>
+
+        <div class="content">
+
+            <!-- Sidebar -->
+            <aside class="filters">
+
+                <h2>Categories</h2>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="category"
+                        value="Shoes"
+                    >
+                    Shoes
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="category"
+                        value="Clothing"
+                    >
+                    Clothing
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="category"
+                        value="Electronics"
+                    >
+                    Electronics
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="category"
+                        value="Accessories"
+                    >
+                    Accessories
+                </label>
+
+            </aside>
+
+            <!-- Products -->
+            <section class="products-section">
+
+                <div id="loading">
+                    Loading...
+                </div>
+
+                <div
+                    id="productsGrid"
+                    class="products-grid"
+                ></div>
+
+                <div
+                    id="pagination"
+                    class="pagination"
+                ></div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
